@@ -12,10 +12,10 @@ export const BoxPagina = styled.body`
 export const Filtros = styled.div`
   display: flex;
   flex-direction: column;
-
-  padding: 1vw;
-  position: absolute;
+  position: relative;
   top: 0;
+  margin-left: 0;
+  padding: 1vw;
   border: 1px solid red;
   font: 12px sans-serif;
   input {
@@ -27,21 +27,24 @@ export const Filtros = styled.div`
 
 export const HeaderProdutos = styled.div`
   display: flex;
+  position: relative;
   top: 0;
-
+  height: 10vh;
+  width: 60vw;
   border: 1px solid green;
   font: 6px sans-serif;
   justify-content: space-between;
+  align-items: center;
   select {
     height: 5vh;
-    margin-top: 3vh;
+    align-items: center;
     cursor: pointer;
   }
 `
 
 export const Cards = styled.div`
   display: grid;
-  position: absolute;
+  position: relative;
   top: 12vh;
   height: 70vh;
   width: 60vw;
@@ -49,26 +52,31 @@ export const Cards = styled.div`
   grid-template-rows: repeat(3, 1fr);
   row-gap: 10px;
   column-gap: 10px;
-  margin-top: 20px;
-  margin-left: 18vw;
 `
 
 export const CardProdutoStyle = styled.div`
-  display: grid;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-items: center;
   border-style: solid;
   border: 1px;
-  align-items: start;
-  justify-items: stretch;
+
   box-shadow: 0px 0px 5px 1px #868686;
-  text-align: center;
-  margin-bottom: 5px;
-  font: 12px sans-serif;
+  h4 {
+    text-align: center;
+    font: 12px sans-serif;
+    margin-bottom: 10px;
+  }
   img {
     width: 100%;
-    height: 170px;
+    height: auto;
   }
   button {
+    display: flex;
+    justify-items: center;
     cursor: pointer;
+    margin-bottom: 10px;
   }
 `
 

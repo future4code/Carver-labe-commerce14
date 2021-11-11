@@ -10,6 +10,12 @@ import {
   CardProdutoStyle
 } from './styles'
 
+updadeQuery = ev => {
+  this.setState({
+    query: ev.target.value
+  })
+}
+
 class App extends Component {
   render() {
     return (
@@ -17,11 +23,30 @@ class App extends Component {
         <Filtros>
           <h1>Filtros</h1>
           <h4>Valor mínimo:</h4>
-          <input type="number" min="100" max="500" />
+
+          <input
+            type="number"
+            min="50"
+            max="1.000"
+            value={this.state.query}
+            onChange={this.updadeQuery}
+          />
+
           <h4>Valor máximo:</h4>
-          <input type="number" min="100" max="500" />
+          <input
+            type="number"
+            min="50"
+            max="1.000"
+            value={this.state.query}
+            onChange={this.updadeQuery}
+          />
           <h4>Buscar:</h4>
-          <input type="text" placeholder="Nome do produto" />
+          <input
+            type="text"
+            placeholder="Nome do produto"
+            value={this.state.query}
+            onChange={this.updadeQuery}
+          />
         </Filtros>
 
         <HeaderProdutos>
@@ -39,21 +64,26 @@ class App extends Component {
 
         <Cards>
           <CardProdutoStyle>
+            {this.state.cards
+              .filter(cards => {
+                return cards.title.includes(this.state.query)
+              })
+              .map(cards => {
+                return <CardProduto key={card.id} card={card} />
+              })}
             <CardProduto
               imagem={
                 'https://thumbs.dreamstime.com/b/sat%C3%A9lite-real%C3%ADstico-ilustra%C3%A7%C3%A3o-do-vetor-d-tecnologia-sem-fio-isolado-no-fundo-branco-141172069.jpg'
               }
               titulo={'Satélites antigos'}
-              valor={'300'}
+              valor={'600'}
               nomeBotao={'Adcionar ao carrinho'}
             />
           </CardProdutoStyle>
 
           <CardProdutoStyle>
             <CardProduto
-              imagem={
-                'https://www.maxuta.com/maxuta/collections/034_space_zvezda/034001_sokol_kv_2_display_cover_01.jpg'
-              }
+              imagem={'https://i.postimg.cc/j5TwnX3d/xhezeoy5-900.jpg'}
               titulo={'Roupas espaciais'}
               valor={'200'}
               nomeBotao={'Adcionar ao carrinho'}
