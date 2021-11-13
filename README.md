@@ -1,6 +1,6 @@
-<h1 style="text-align:center">Projeto Lab-ecommerce</h1>
-<h3 style="text-align:center">Loja online de produtos espaciais.<h3>
-<div style="text-align:center"> <img src="https://img.shields.io/badge/-React-9cf"></div>
+<h1 align="center">Projeto Lab-ecommerce</h1>
+<h3 align="center">Loja online de produtos espaciais.<h3>
+<div align="center"> <img src="https://img.shields.io/badge/-React-9cf"></div>
 <p align="center">
  <a href="#objetivo">Objetivo</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
