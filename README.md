@@ -22,6 +22,6 @@
 <p>Partimos da divisão inicial proposta em 3 partes, a Kahena com os filtros, a Alessandra com os cards de produtos, e a Bruna com o carrinho. Porém no segundo dia a Eliana chegou de um remanejamento em ficamos em quatro, parte da estilização, mock de design foi feito pela Kahena, bem como o componente de produtos e os cards, o restante dessa parte de estilização foi finalizado pela Eliana, juntamente com o comportamento dos filtros. A Bruna focou no carrinho como proposto inicialmente.</p>
 </div>
  
-<p>Quer ver o resultado do nosso trabalho? <a href="quizzical-library.surge.sh" target="_blank">Clique aqui</a>.</p>
+<p>Quer ver o resultado do nosso trabalho? <a href="https://quizzical-library.surge.sh/" target="_blank">Clique aqui</a>.</p>
 
 <p>“We can code it!”</p>
